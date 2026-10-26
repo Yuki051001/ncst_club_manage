@@ -1,0 +1,26 @@
+# --- 虚拟环境与 Python 缓存 ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Django 相关 ---
+# 本地数据库（绝对不要提交，否则会引发各种冲突）
+*.sqlite3
+db.sqlite3
+
+# 收集的静态文件和用户上传的文件
+/staticfiles/
+/media/
+
+# --- 环境变量文件（极其重要，防泄露密码） ---
+.env
+.env.*
+
+# --- 操作系统与 IDE 杂项 ---
+.DS_Store
+.idea/
+.vscode/

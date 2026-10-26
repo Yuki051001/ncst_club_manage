@@ -1,0 +1,21 @@
+[project]
+name = "ncst-club-manage"
+version = "0.1.0"
+description = "当前项目主要用于华北理工大学的社团管理，使社团的成员能够方便的进行社团的申请，便于新生对社团的了解。"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=6.1.2",
+]
+authors = [{name = "ZhouJiayu",email = "1803084613@qq.com"}]
+
+[project.scripts]
+ncst-club-manage = "ncst_club_manage:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
