@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', # RESTful API
+    'drf_spectacular', # API 文档
     'corsheaders', # 跨域请求
     'club', # 社团管理
 ]
@@ -130,6 +131,14 @@ MAILERS = {
     },
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
 
 # 开发环境允许所有跨域请求
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+import os
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

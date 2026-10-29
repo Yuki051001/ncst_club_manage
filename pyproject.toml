@@ -8,6 +8,7 @@ dependencies = [
     "django>=6.1.2",
     "django-cors-headers>=4.9.0",
     "djangorestframework>=3.18.3",
+    "drf-spectacular>=0.30.0",
 ]
 authors = [{name = "ZhouJiayu",email = "1803084613@qq.com"}]
 
